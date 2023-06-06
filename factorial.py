@@ -7,3 +7,6 @@ def factorial(n):
 
 for i in range(1, 10):
     print(f"El factorial de {i} es: {factorial(i)}")
+
+#
+#ejemplo cambios git
