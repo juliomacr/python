@@ -74,7 +74,7 @@ def checkMatch(mat, pat, nrow, ncol) :
   
     l = len(pat)
   
-    # if total characters in matrix is 
+    # if totl characteres in matrix is 
     # less then pattern lenghth 
     if (l > nrow * ncol) :
         return False
