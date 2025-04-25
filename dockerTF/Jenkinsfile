@@ -71,5 +71,8 @@ pipeline {
         failure {
             echo 'Error en el pipeline.'
         }
+        always {
+        cleanWs()
+         }
     }
 }
