@@ -1,8 +1,7 @@
 pipeline {
     agent any
 
-    environment {
-        
+    environment {  
         TF_DIR = "dockerTF/terraform"
     }
 
@@ -19,6 +18,13 @@ pipeline {
             }
         }
 
+        stage('Clone WebPage-Application code') {
+            steps {
+                dir("${env.TF_DIR}") {
+                    sh 'git clone git@github.com:juliomacr/aquashopcr01.git'
+                }
+            }
+        }
 /*         stage('Install Terraform') {
             steps {
                 script {

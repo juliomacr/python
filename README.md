@@ -1,4 +1,6 @@
-# 🐍 Python Code Challenges & Tests
+# IN PROGRESS
+
+# 🐍 Python Code Challenges & Tests for DevOps interviews
 
 Welcome to my Python repository! This collection includes a variety of coding challenges, algorithmic exercises, and small projects that I’ve tackled during my job hunt. Each folder or script here represents a different problem I’ve worked on — whether it's for practice, technical assessments, or just to explore interesting problems.
 
@@ -11,7 +13,9 @@ You'll find:
 - 🧪 Technical assessments from different companies  
 - 🛠️ Utility scripts and mini-projects  
 
-I’ve kept the code clean and well-commented to make it easy to follow and revisit later. Some of the challenges may be familiar if you’ve gone through common interview platforms (like LeetCode, HackerRank, etc.), while others are more unique or custom-made.
+I’ve try to kept the code clean and well-commented to make it easy to follow and revisit later. Some of the challenges may be familiar if you’ve gone through common interview platforms (like LeetCode, HackerRank, etc.), while others are more unique or custom-made. 
+
+It definitely needs better organization and is going to be something in progress.
 
 ## 🚀 How to Run
 
