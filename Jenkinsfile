@@ -7,5 +7,11 @@ pipeline {
                 sh 'echo "Hello World 3"'
             }
         }
+        stage('test') {
+            steps {
+                sh 'python3 --version'
+                sh 'echo "Testing"'
+            }
+        }
     }
 }

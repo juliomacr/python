@@ -28,3 +28,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+dockerTF/.terraform
+dockerTF/.terraform.lock.hcl
+dockerTF/.terraform.tfstate.lock.info
+dockerTF/terraform.tfstate
+dockerTF/terraform.tfstate.backup
