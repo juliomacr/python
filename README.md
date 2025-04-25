@@ -1,7 +1,3 @@
-
-markdown
-Copy
-Edit
 # 🐍 Python Code Challenges & Tests
 
 Welcome to my Python repository! This collection includes a variety of coding challenges, algorithmic exercises, and small projects that I’ve tackled during my job hunt. Each folder or script here represents a different problem I’ve worked on — whether it's for practice, technical assessments, or just to explore interesting problems.
@@ -24,7 +20,9 @@ Clone the repo:
 ```bash
 git clone https://github.com/juliomacr/python.git
 cd python
+
 Run any script using:
+```bash
 python3 script_name.py
 
 Some files may require specific Python versions or dependencies — if so, a requirements.txt or inline comment will guide you.
