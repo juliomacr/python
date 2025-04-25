@@ -8,7 +8,7 @@ RUN rm -rf /usr/share/nginx/html/*
 #COPY index.html /usr/share/nginx/html/
 
 # Copy from remote Repo
-COPY aquashopcr01/* /usr/share/nginx/html/
+COPY aquashopcr01/ /usr/share/nginx/html/
 
 
 
