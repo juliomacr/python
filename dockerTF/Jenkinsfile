@@ -1,0 +1,61 @@
+pipeline {
+    agent any
+
+    environment {
+        TF_VAR_container_name = "nginx-server"
+        TF_DIR = "terraform"
+    }
+
+    options {
+        timestamps()
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Clonando repositorio...'
+                checkout scm
+            }
+        }
+
+        stage('Terraform Init') {
+            steps {
+                dir("${env.TF_DIR}") {
+                    sh 'terraform init'
+                }
+            }
+        }
+
+        stage('Terraform Plan') {
+            steps {
+                dir("${env.TF_DIR}") {
+                    sh 'terraform plan -out=tfplan'
+                }
+            }
+        }
+
+        stage('Terraform Apply') {
+            steps {
+                dir("${env.TF_DIR}") {
+                    sh 'terraform apply -auto-approve tfplan'
+                }
+            }
+        }
+
+        stage('Verificar Contenedor') {
+            steps {
+                sh 'docker ps | grep nginx || echo "Contenedor NGINX no iniciado"'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Despliegue exitoso.'
+        }
+        failure {
+            echo 'Error en el pipeline.'
+        }
+    }
+}
