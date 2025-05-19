@@ -10,7 +10,5 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy from remote Repo
 COPY aquashopcr01/ /usr/share/nginx/html/
 
-
-
 # Expose port 8000
 EXPOSE 8000
